@@ -65,7 +65,7 @@ trio-websocket==0.11.1
 Twisted==22.10.0
 twisted-iocpsupport==1.0.4
 txaio==23.1.1
-typing-extensions==3.10.0.2
+typing-extensions==4.12.2
 tzdata==2024.1
 urllib3==2.2.1
 whitenoise==6.7.0
