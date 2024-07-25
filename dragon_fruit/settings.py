@@ -25,8 +25,9 @@ SECRET_KEY = 'django-insecure-j0*nawqc+0fpz&6y8k436q97ktdh8$%^i@%t37*lnq1oz#j)s4
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['127.0.0.1","divine-beauty-production.up.railway.app']
+ALLOWED_HOSTS = ["*"]
 CSRF_TRUSTED_ORIGINS = ['https://divine-beauty-production.up.railway.app']
+#127.0.0.1
 
 
 # Application definition
