@@ -12,6 +12,7 @@ https://docs.djangoproject.com/en/5.0/ref/settings/
 
 from pathlib import Path
 
+
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
@@ -23,11 +24,14 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-j0*nawqc+0fpz&6y8k436q97ktdh8$%^i@%t37*lnq1oz#j)s4'
 
 # SECURITY WARNING: don't run with debug turned on in production!
+
 DEBUG = True
 
-ALLOWED_HOSTS = ["127.0.0.1", "dragon-fruit-production.up.railway.app"]
-CSRF_TRUSTED_ORIGINS = ['https://dragon-fruit-production.up.railway.app']
+
+ALLOWED_HOSTS = ["127.0.0.1", "dragon-fruit-production-5add.up.railway.app"]
+CSRF_TRUSTED_ORIGINS = ['https://dragon-fruit-production-5add.up.railway.app']
 #127.0.0.1
+#127.0.0.1", "dragon-fruit-production.up.railway.app
 
 
 # Application definition
@@ -76,6 +80,7 @@ TEMPLATES = [
 WSGI_APPLICATION = 'dragon_fruit.wsgi.application'
 
 
+
 # Database
 # https://docs.djangoproject.com/en/5.0/ref/settings/#databases
 
@@ -84,9 +89,9 @@ DATABASES = {
         'ENGINE': 'django.db.backends.postgresql',
         'NAME': 'railway',
         'USER': 'postgres',
-        'PASSWORD': 'RHeEzvItbnkKKUAZRcMgrBAFmksUQBkm',
-        'HOST': 'viaduct.proxy.rlwy.net',
-        'PORT': '5432',
+        'PASSWORD': '5gD6CcFgdafeabCcBA*EB*BD3GB3gace',
+        'HOST': 'roundhouse.proxy.rlwy.net',
+        'PORT': '55194',
     }
 }
 
