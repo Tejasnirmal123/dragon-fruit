@@ -25,7 +25,8 @@ SECRET_KEY = 'django-insecure-j0*nawqc+0fpz&6y8k436q97ktdh8$%^i@%t37*lnq1oz#j)s4
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ["127.0.0.1","web-production-344d.up.railway.app"]
+CSRF_TRUSTED_ORIGINS = ["https://web-production-344d.up.railway.app"]
 
 
 # Application definition
@@ -78,8 +79,12 @@ WSGI_APPLICATION = 'dragon_fruit.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'railway',
+        'USER': 'postgres',
+        'PASSWORD': 'UeaXhZCTBDGvBgtpznjDKQyPAtozVvmS',
+        'HOST': 'postgres.railway.internal',
+        'PORT': '5432',
     }
 }
 
