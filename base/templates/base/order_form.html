@@ -24,6 +24,16 @@
                     <label for="id_address">Address:</label>
                     {{ form.address }}
                 </div>
+                <div id="other_address_div" class="form-group">
+                    <label for="id_other_address">Other Address:</label>
+                    {{ form.other_address }}
+                </div>
+
+                <div class="form-group">
+                    <label for="id_landmark">Flat No / Landmark</label>
+                    {{ form.landmark }}
+                </div>
+
                 <div class="form-group">
                     <label for="id_kg_ordered">Kg Ordered:</label>
                     {{ form.kg_ordered }}
@@ -31,6 +41,29 @@
                 <button type="submit" class="btn btn-primary">Place Order</button>
             </form>
         </div>
+
+
+        <script>
+            function toggleOtherAddress() {
+                var addressSelect = document.getElementById("id_address");
+                var otherAddressDiv = document.getElementById("other_address_div");
+                if (addressSelect.value === "other") {
+                    otherAddressDiv.style.display = "block";
+                } else {
+                    otherAddressDiv.style.display = "none";
+                }
+            }
+            window.onload = function() {
+                toggleOtherAddress();  // Initial check on page load
+                document.getElementById("id_address").addEventListener("change", toggleOtherAddress);
+            }
+        </script>
+
+        <style>
+            #other_address_div {
+                display: none;
+            }
+        </style>
 
 
 

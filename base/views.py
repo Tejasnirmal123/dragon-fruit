@@ -15,7 +15,12 @@ def order_view(request):
     if request.method == 'POST':
         form = CustomerForm(request.POST)
         if form.is_valid():
-            form.save()
+            customer = form.save(commit=False)
+            if form.cleaned_data['address'] == 'other':
+                customer.address = form.cleaned_data['other_address']
+            else:
+                customer.address = dict(form.fields['address'].choices)[form.cleaned_data['address']]
+            customer.save()
             return redirect('order_success')
     else:
         form = CustomerForm()
