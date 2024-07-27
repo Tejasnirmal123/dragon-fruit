@@ -9,6 +9,7 @@ class Customer(models.Model):
         ('barclays_office', 'Barclays Office'),
         ('kothrud_depo', 'Kothrud Depo'),
         ('pimple_saudagar', 'Pimple Saudagar'),
+        ('Kumar_Picasso', 'Kumar Picasso'),
         ('other', 'Other'),
     ]
 
